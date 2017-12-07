@@ -1,0 +1,19 @@
+{
+  "name": "demo-sample",
+  "version": "0.0.0",
+  "description": "Demo-Sample",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "postinstall": "tsd install"
+  },
+  "dependencies": {
+    "gulp-typescript": "2.12.1",
+    "nodedata": "2.10.0",
+    "typescript": "1.8.10"
+  },
+  "devDependencies": {
+    "gulp-livereload": "3.8.1",
+    "gulp-nodemon": "2.0.6"
+  }
+}
