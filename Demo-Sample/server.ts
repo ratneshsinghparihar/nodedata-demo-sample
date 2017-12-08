@@ -1,5 +1,5 @@
 ﻿/// <reference path="node_modules/reflect-metadata/reflect-metadata.d.ts" />
-/// <reference path="typings/linq/linq.3.0.3-Beta4.d.ts" />
+/// <reference path="typings/modules/linq/index.d.ts" />
 
 import http = require('http');
 var express = require("express");
