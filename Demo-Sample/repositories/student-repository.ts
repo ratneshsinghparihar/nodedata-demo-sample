@@ -3,5 +3,4 @@ import {StudentModel} from '../models/studentmodel';
 
 @decorator.repository({ path: 'students', model: StudentModel })
 export default class StudentRepository {
-     constructor() {}
 }

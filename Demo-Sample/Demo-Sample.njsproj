@@ -40,7 +40,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="models\" />
-    <Folder Include="services\" />
     <Folder Include="repositories\" />
     <Folder Include="typings\" />
     <Folder Include="typings\" />
@@ -60,30 +59,9 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="config.ts" />
-    <TypeScriptCompile Include="models\adress.ts" />
-    <TypeScriptCompile Include="models\blog.ts" />
-    <TypeScriptCompile Include="models\blogmodel.ts" />
-    <TypeScriptCompile Include="models\coursemodel.ts" />
-    <TypeScriptCompile Include="models\decorator.ts" />
-    <TypeScriptCompile Include="models\modelBase.ts" />
-    <TypeScriptCompile Include="models\person.ts" />
-    <TypeScriptCompile Include="models\personModel.ts" />
-    <TypeScriptCompile Include="models\role.ts" />
-    <TypeScriptCompile Include="models\rolemodel.ts" />
-    <TypeScriptCompile Include="models\studentmodel.ts" />
-    <TypeScriptCompile Include="models\teachermodel.ts" />
-    <TypeScriptCompile Include="models\user.ts" />
-    <TypeScriptCompile Include="models\usermodel.ts" />
-    <TypeScriptCompile Include="repositories\blogrepository.ts" />
-    <TypeScriptCompile Include="repositories\course-repository.ts" />
-    <TypeScriptCompile Include="repositories\personrepository.ts" />
-    <TypeScriptCompile Include="repositories\rolerepository.ts" />
-    <TypeScriptCompile Include="repositories\student-repository.ts" />
+    <TypeScriptCompile Include="models\baseModel.ts" />
     <TypeScriptCompile Include="repositories\teacher-repository.ts" />
-    <TypeScriptCompile Include="repositories\userRepository.ts" />
-    <TypeScriptCompile Include="test-di.ts" />
-    <TypeScriptCompile Include="services\service-b.ts" />
-    <TypeScriptCompile Include="services\service-a.ts" />
+    <TypeScriptCompile Include="repositories\student-repository.ts" />
     <TypeScriptCompile Include="typings\express\express.d.ts" />
     <TypeScriptCompile Include="typings\form-data\form-data.d.ts" />
     <TypeScriptCompile Include="typings\jasmine\jasmine.d.ts" />
