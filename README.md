@@ -1,6 +1,6 @@
 ## Quick Start
 Assumptions - 
-1. mongodb is installed and server is running.
+1. mongodb is installed and server is running on default port.
 2. Node 6.9.0 is installed.
 
 Please follow belos steps to check CRUD operations with nodedata
