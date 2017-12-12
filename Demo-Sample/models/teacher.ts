@@ -9,28 +9,28 @@ import {Student} from './student';
 export class Teacher extends BaseModel {
 
     // reference is saved in database and not the actual document
-    @onetoone({ itemType: Student, rel: 'student', eagerLoading: false, embedded: false })
-    student: Student;
+    @onetomany({ itemType: Student, rel: 'student', eagerLoading: false, embedded: false })
+    student: Array<Student>;
 
     // reference is saved in database, but in get query eagerloaded proprties are fetched
-    @onetoone({ itemType: Student, rel: 'student', eagerLoading: true, embedded: false })
-    studentEL: Student;
+    @onetomany({ itemType: Student, rel: 'student', eagerLoading: true, embedded: false })
+    studentEL: Array<Student>;
 
     // embedding
-    @onetoone({ itemType: Student, rel: 'student', eagerLoading: false, embedded: true })
-    studentE: Student;
+    @onetomany({ itemType: Student, rel: 'student', eagerLoading: false, embedded: true })
+    studentE: Array<Student>;
 
     // partial embedding example
-    @onetoone({ itemType: Student, rel: 'student', eagerLoading: false, embedded: true, properties:['age'] })
-    studentPE: Student;
-
-    // embedding with storage type as JSONMAP. This is faster in update/delete as compared to normal embedding
-    @onetoone({ itemType: Student, rel: 'student', eagerLoading: false, embedded: true, storageType: StorageType.JSONMAP })
-    studentEJ: Student;
+    @onetomany({ itemType: Student, rel: 'student', eagerLoading: false, embedded: true, properties:['age'] })
+    studentPE: Array<Student>;
 
     // Delete cascade makes sure that, if parent is deleted then child is also deleted. This makes sure that orphans are not present in the system
-    @onetoone({ itemType: Student, rel: 'student', eagerLoading: false, embedded: true, deleteCascade: true })
-    studentDC: Student;
+    @onetomany({ itemType: Student, rel: 'student', eagerLoading: false, embedded: true, deleteCascade: true })
+    studentDC: Array<Student>;
+
+    // embedding with storage type as JSONMAP. This is faster in update/delete as compared to normal embedding
+    @onetomany({ itemType: Student, rel: 'student', eagerLoading: false, embedded: true, storageType: StorageType.JSONMAP })
+    studentEJ: Array<Student>;
 }
 
 export default Teacher;
