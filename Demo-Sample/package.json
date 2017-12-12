@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "gulp-typescript": "2.12.1",
-    "nodedata": "2.10.0",
+    "nodedata": "2.10.2",
     "typescript": "1.8.10"
   },
   "devDependencies": {
