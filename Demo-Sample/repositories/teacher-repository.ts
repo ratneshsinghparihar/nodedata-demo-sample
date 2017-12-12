@@ -1,6 +1,6 @@
 ﻿import * as decorator from "nodedata/core/decorators/repository";
-import {TeacherModel} from '../models/teacherModel';
+import {Teacher} from '../models/teacher';
 
-@decorator.repository({ path: 'teachers', model: TeacherModel })
+@decorator.repository({ path: 'teachers', model: Teacher })
 export default class TeacherRepository {
 }
