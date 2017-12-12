@@ -24,10 +24,6 @@ export class Teacher extends BaseModel {
     @onetoone({ itemType: Student, rel: 'student', eagerLoading: false, embedded: true, properties:['age'] })
     studentPE: Student;
 
-    // embedding with storage type as JSONMAP. This is faster in update/delete as compared to normal embedding
-    @onetoone({ itemType: Student, rel: 'student', eagerLoading: false, embedded: true, storageType: StorageType.JSONMAP })
-    studentEJ: Student;
-
     // Delete cascade makes sure that, if parent is deleted then child is also deleted. This makes sure that orphans are not present in the system
     @onetoone({ itemType: Student, rel: 'student', eagerLoading: false, embedded: true, deleteCascade: true })
     studentDC: Student;
