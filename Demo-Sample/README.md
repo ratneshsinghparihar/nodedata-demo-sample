@@ -1,4 +1,4 @@
-## How To Use without security
+## Quick Start
 Assumptions - 
 1. mongodb is installed and server is running.
 2. Node 6.9.0 is installed.
