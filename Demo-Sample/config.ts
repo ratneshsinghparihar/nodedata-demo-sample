@@ -12,8 +12,3 @@ export class Security {
     public static authenticationType = "passwordBased";//allowed values: "passwordBased","TokenBased"
 }
 
-export class facebookAuth {
-    public static clientID = '11';// your App ID
-    public static clientSecret = 'aa';// your App Secret
-    public static callbackURL = 'http://localhost:23548/auth/facebook/callback';
-}
